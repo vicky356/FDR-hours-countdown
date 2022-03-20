@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <!-- <script type="text/javascript" src="fdrCalculation.js"></script> -->
+    <!-- <script type="module" src="script.js"></script>
+    <script type="module" src="Aircraft.js"></script>
+    <script type="module" src="data.js"></script> -->
+  </head>
+
+  <body>
+    <div id = "wrapper">
+    <h1>ANAP FLEET FDM DOWNLOAD TRACKER</h1>
+    <h2>Calendar Based Tracking</h2>
+    <table id="phenom_table">
+      <tr>
+        <th>Aircraft Reg</th>
+        <th>Download Date</th>
+        <th>Next Download due</th>
+        <th>Days Left</th>
+      </tr>
+      <tr>
+        <td>5N-BVF</td>
+        <td>
+          <input type="date" id="bvf_date">
+        </td>
+        <td id="bvf_due"><!--Calculate next due date --></td>
+        <td id="bvf_days_left"><!--Number of days left --></td>
+      </tr>
+      <tr>
+        <td>5N-BVG</td>
+        <td>
+          <input type="date" id="bvg_date">
+        </td>
+        <td id="bvg_due"><!--Calculate next due data --></td>
+        <td id="bvg_days_left"><!--Number of days left --></td>
+      </tr>
+    </table>
+    <!-- <button type="button" name="phenom_button">Update values</button> -->
+    <h2>Hourly Based Tracking</h2>
+      <table id="legacy_145_table">
+        <tr>
+          <th>Aircraft Reg</th>
+          <th>Download Date</th>
+          <th>Current Hours</th>
+          <th>Download Hours</th>
+          <th>Next Due Hours</th>
+        </tr>
+        <tr>
+          <td>5N-BTX</td>
+          <td>
+            <input type="date" id="btx_date" style="width: 125px">
+          </td>
+          <td>
+            <input type="number" id="btx_current_hours" style="width: 70px" placeholder="1234.56">
+          </td>
+          <td>
+            <input type="number" id="btx_hours" placeholder="1234.56" style="width: 70px">
+          </td>
+          <td id="btx_cell"><!--Calculate next due data --></td>
+        </tr>
+        <tr>
+          <td>5N-BYX</td>
+          <td>
+            <input type="date" id="byx_date" style="width: 125px">
+          </td>
+          <td>
+            <input type="number" id="byx_current_hours" style="width: 70px"  placeholder="1234.56">
+          </td>
+          <td>
+            <input type="number" id="byx_hours" placeholder="1234.56" style="width: 70px">
+          </td>
+          <td><!--Calculate next due data --></td>
+        </tr>
+      </table>
+      <button type="button" id="legacy_button">Update values</button>
+    </div>
+  </body>
+  <script src="fdrCalculation.js"></script>
+</html>
