@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* text-align: center; */
   background-color: #6495ed;
   color: white;
@@ -8,7 +11,7 @@ body {
 }
 
 #wrapper {
-  width: 550px;
+  width: 600px;
   background-color: #000365;
   /* Line below keeps our content centered and resizeable */
   margin: 5rem auto;
